@@ -18,8 +18,8 @@
   <xacro:macro name="kinect" params="xyz rpy parent_frame" >
   
   <joint name="base_camera_joint" type="fixed">
-    <origin xyz="${xyz}" rpy="${rpy}" />
-    <parent link="${parent_frame}" />
+    <origin xyz="0.1 0 0.175" rpy="0 0 0" />  
+    <parent link="chassis" />
     <origin xyz="0 0 0" rpy="0 0 0" />
     <child link="camera_link" />
   </joint>
